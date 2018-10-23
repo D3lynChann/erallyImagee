@@ -7,7 +7,7 @@ import circuit.h;
  * Created by blister on 2018/1/24.
  */
 public class Imagee{
-
+	int aa;
     public int h; //高
     public int w; //宽
     public int[] data; //像素
