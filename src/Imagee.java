@@ -95,7 +95,7 @@ public class Imagee{
                 }
             }
         }
-        ArrayList<h> index = ImgHandler.getArrayListOfHist(hist, 0.70, true); //找到大于最大值*0.7的二维直方图的点
+        ArrayList<h> index = Houghh.getArrayListOfHist(hist, 0.70, true); //找到大于最大值*0.7的二维直方图的点
 
         for(int k =0;k<index.size();k++){
 

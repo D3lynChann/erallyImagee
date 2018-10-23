@@ -41,11 +41,11 @@ public class twoDCross {
         p = pp;
     }
     public twoDCross(BufferedImage input) throws Exception {
-        matrix = ImgHandler.imageToIntArray(input);
+        matrix = Transformer.imageToIntArray(input);
     }
     public twoDCross(String fileName) throws Exception {
         BufferedImage bimg = ImageIO.read(new File(fileName));
-        matrix = ImgHandler.imageToIntArray(bimg);
+        matrix = Transformer.imageToIntArray(bimg);
     }
     public void init() {
         int height = matrix.length;
@@ -161,7 +161,7 @@ public class twoDCross {
 
         //doIt(matrix, res);
         BG(res);
-        ImgHandler.IntArrayToColorFulImage(res, fileName);
+        Transformer.IntArrayToColorFulImage(res, fileName);
     }
     public void bDrawColor(String fileName) throws Exception {
         //BigInteger[][] res = new BigInteger[labels.length][labels[0].length];
@@ -170,7 +170,7 @@ public class twoDCross {
             for (int itr = 0; itr < labels[0].length; itr++)
                 //res[ctr][itr] = p.encrypt(new BigInteger(String.valueOf(colors[labels[ctr][itr] % colors.length])));
                 res[ctr][itr] = colors[labels[ctr][itr] % colors.length];
-        ImgHandler.writeImage(res, fileName);
+        Writer.writeImage(res, fileName);
     }
     public void BG(int[][] input) throws Exception {
         int max = 0, res = 0;

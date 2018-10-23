@@ -188,7 +188,7 @@ public class Kmeans002 {
         //printArray(List);
         fit(List, Matrix, ClusterNum);
         System.out.println("writing!");
-        ImgHandler.writeImage(OneD2TwoD(Matrix, origin_col), "D:\\test123.jpg");
+        Writer.writeImage(OneD2TwoD(Matrix, origin_col), "D:\\test123.jpg");
         System.runFinalization();
     }
 }
