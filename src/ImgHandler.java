@@ -235,7 +235,7 @@ public class ImgHandler {
         int[][] matrix2 = getBBBData(files[1]);
         int[][] matrix3 = getBBBData(files[2]);
         int[][][] temp = {matrix1, matrix2, matrix3};
-        writeImage(subOfPictureThree(temp), files[3]);
+        Writer.writeImage(subOfPictureThree(temp), files[3]);
     }
 
     //turn an image into a BigInt Array
@@ -339,6 +339,7 @@ public class ImgHandler {
         fw.close();
     }
 
+    //get a big integer matrix from a picture
     public static BigInteger[][] readBigFromFile(String path, int wid, int hei, Paillier pp) throws Exception {
         FileReader fr = new FileReader(path);
         BufferedReader br = new BufferedReader(fr);
@@ -353,11 +354,13 @@ public class ImgHandler {
         return res;
     }
 
+    //as above, get a big integer matrix
     public static BigInteger[][] getBData(String path, Paillier pp) throws Exception {
         BufferedImage bimg = ImageIO.read(new File(path));
         return imageToBigIntArray(bimg, pp);
     }
 
+    //three tunnel color matrix to a picture
     public static void writeImage(int[][][] matrix, String fileName) throws Exception {
         matrix[0] = inPeices(matrix[0], 1);
         matrix[1] = inPeices(matrix[1], 1);
@@ -377,35 +380,8 @@ public class ImgHandler {
         ImageIO.write(buff, "jpg", ImageFile);
     }
 
-    public static void writeImage(int[][] matrix, String fileName) throws Exception {
-        //matrix = toThree(matrix);
-        File ImageFile = new File(fileName);
-        //edge detection
-        matrix = inPeices(matrix, 2);
-        matrix = whitePic(matrix);
-        //GsTrans(matrix);
-        BufferedImage buff;
-        buff = IntArrayToBinImage(matrix);
-        ImageIO.write(buff, "bmp", ImageFile);
-        //2-d
-        /*
-        BufferedImage buff;
-        buff = IntArrayToBinImage(matrix);
-        ImageIO.write(buff, "jpg", ImageFile);
-        */
-/*
-        File ImageFile = new File(fileName);
-        BufferedImage buff;
-        GsTrans(matrix); // 高斯其
-        NormalBinaryImage(matrix, iterationGetThreshold(matrix)); //迭代二值化
-        matrix = SobelIt(matrix); //Sobel其
-        matrix = LplsIt(matrix);
-        GsTrans(matrix); // 高斯其
-        buff = IntArrayToGreyImage(matrix);
-        ImageIO.write(buff, "jpg", ImageFile);
-*/
-    }
 
+    //give the picture a white edge
     public static int[][] whitePic(int[][] input) {
         int h = input.length, w = input[0].length;
         for (int ctr = 0; ctr < h; ctr++) input[ctr][0] = input[ctr][w-1]=255;
@@ -413,61 +389,8 @@ public class ImgHandler {
         return input;
     }
 
-    public static void writeImage(double[][] matrix, String fileName) throws Exception {
-        File ImageFile = new File(fileName);
-        BufferedImage buff;
-        buff = IntArrayToGreyImage(matrix);
-        ImageIO.write(buff, "jpg", ImageFile);
-    }
 
-    public static void writeImage(int[][] matrix, String fileName1, String fileName2, int p) throws Exception {
-        File ImageFile1 = new File(fileName1);
-        //File ImageFile2 = new File(fileName2);
-        BufferedImage buff1;//, buff2;
-        int[][] temp = inPeices(matrix, p);
-        //NormalBinaryImage(matrix, 220);
-        //GsTrans(temp);
-        buff1 = IntArrayToGreyImage(temp);
-        ImageIO.write(buff1, "jpg", ImageFile1);
-        //GsTrans(matrix);
-
-        //hough(temp);
-        make(temp, fileName2);
-        System.out.println("!!!");
-        //buff2 = IntArrayToGreyImage(temp);
-        //ImageIO.write(buff2, "jpg", ImageFile2);
-
-
-        /*
-        File ImageFile1 = new File(fileName1);
-        File ImageFile2 = new File(fileName2);
-        BufferedImage buff1, buff2;
-        GsTrans(matrix); // 高斯其
-        buff1 = IntArrayToGreyImage(matrix);
-        ImageIO.write(buff1, "jpg", ImageFile1);
-        NormalBinaryImage(matrix, iterationGetThreshold(matrix)); //迭代二值化
-        matrix = SobelIt(matrix); //Sobel其
-        matrix = LplsIt(matrix);
-        GsTrans(matrix); // 高斯其
-        buff2 = IntArrayToGreyImage(matrix);
-        ImageIO.write(buff2, "jpg", ImageFile2);
-*/
-    }
-    public static void writeImage(BigInteger[][] matrix, Paillier pp, String fileName) throws Exception {
-        //GsTrans(matrix, pp);
-        //NormalBinaryImage(matrix, 160, pp);
-        cover(matrix, "D://rexs.jpg", pp);
-        int width = matrix.length;
-        int height = matrix[0].length;
-        File ImageFile = new File(fileName);
-
-        BufferedImage buff = new BufferedImage(width, height, BufferedImage.TYPE_3BYTE_BGR);
-
-        buff = BigIntArrayToGreyImage(matrix, pp);
-
-        ImageIO.write(buff, "jpg", ImageFile);
-    }
-
+    //decrypt the big integer matrix to a double matrix
     public static double[][] intMatrixToDoubleMatrix(BigInteger[][] matrix, Paillier pp) throws Exception {
         GsTrans(matrix, pp);
         int width = matrix.length;
@@ -483,6 +406,7 @@ public class ImgHandler {
         return res;
     }
 
+    //Sobel operator
     public static int[][] SobelIt(int[][] data) throws Exception {
         int w = data[0].length;
         int h = data.length;
@@ -515,6 +439,7 @@ public class ImgHandler {
         return d;
     }
 
+    //Laplas operator
     public static int[][] LplsIt(int[][] data) throws Exception {
         int[][] res = new int[data.length][data[0].length];
         int[][] GT= {{0, -1, 0},{-1, 4, -1},{0, -1, 0}};
@@ -531,6 +456,7 @@ public class ImgHandler {
         return res;
     }
 
+    //turn image to bufferedImage
     public static BufferedImage toBufferedImage(Image image) {
         if (image instanceof BufferedImage) {
             return (BufferedImage)image;
@@ -582,6 +508,7 @@ public class ImgHandler {
         return bimage;
     }
 
+    //zoom an image to a size
     public static int[][] zoomImage(String src,int w,int h) throws Exception {
         double wr=0,hr=0;
         File srcFile = new File(src);
@@ -598,6 +525,7 @@ public class ImgHandler {
         return imageToIntArray(toBufferedImage(Itemp));
     }
 
+    //zoom a matrix to a size
     public static int[][] zoomImage(int[][] data,int w,int h) throws Exception {
         double wr=0,hr=0;
         BufferedImage bufImg = IntArrayToGreyImage(data);
@@ -612,6 +540,7 @@ public class ImgHandler {
         return imageToIntArray(toBufferedImage(Itemp));
     }
 
+    //zoom an image to a size big integer version
     public static BigInteger[][] zoomImage(String src, int w, int h, Paillier pp) throws Exception {
         double wr=0,hr=0;
         File srcFile = new File(src);
@@ -627,6 +556,7 @@ public class ImgHandler {
         return imageToBigIntArray(toBufferedImage(Itemp), pp);
     }
 
+    //oh no, i forgot it
     public static boolean detectMini(int[][] matrix, int x, int y) {
         for (int ctr = 1; ctr < 20; ctr++)
             if (Math.abs(matrix[x + ctr][y] - matrix[x][y]) > 20) return false;
@@ -637,6 +567,7 @@ public class ImgHandler {
         return true;
     }
 
+    //detectMini big integer version
     public static boolean detectMini(BigInteger[][] matrix, int x, int y, Paillier pp) throws Exception {
         for (int ctr = 1; ctr < 20; ctr++)
             if (Main.GcSubAndCompBigVer(Main.absSub(matrix[x + ctr][y], matrix[x][y], pp), "20", pp)) return false;
@@ -647,6 +578,7 @@ public class ImgHandler {
         return true;
     }
 
+    //oh no, i forgot it
     public static int[] detectDx(int[][] matrix, int x, int y) {
         int[] res = new int[2];
         int xx;
@@ -662,6 +594,7 @@ public class ImgHandler {
         return res;
     }
 
+    //detectDx big integer version
     public static int[] detectDx(BigInteger[][] matrix, int x, int y, Paillier pp) throws Exception {
         int[] res = new int[2];
         int xx, yy;
@@ -677,6 +610,7 @@ public class ImgHandler {
         return res;
     }
 
+    //oh no, i forgot it
     public static ArrayList<Kuang> detect(int[][] matrix) throws Exception {
         ArrayList<Kuang> res = new ArrayList<Kuang>();
         int w = matrix.length;
@@ -690,6 +624,7 @@ public class ImgHandler {
         return res;
     }
 
+    //detect big integer version
     public static ArrayList<Kuang> detect(BigInteger[][] matrix, Paillier pp) throws Exception {
         ArrayList<Kuang> res = new ArrayList<Kuang>();
         int w = matrix.length, h = matrix[0].length;
@@ -703,6 +638,7 @@ public class ImgHandler {
         return res;
     }
 
+    //cover a picture
     public static void cover(int[][] matrix, String path) throws Exception {
         ArrayList<Kuang> inputK = detect(matrix);
         for (int all = 0; all < inputK.size(); all++) {
@@ -715,6 +651,7 @@ public class ImgHandler {
         }
     }
 
+    //cover func. big integer version
     public static void cover(BigInteger[][] matrix, String path, Paillier pp) throws Exception {
         ArrayList<Kuang> inputK = detect(matrix, pp);
         for (int all = 0; all < inputK.size(); all++) {
@@ -727,6 +664,18 @@ public class ImgHandler {
         }
     }
 
+    //binary an image with a threshold T
+    public static void NormalBinaryImage(int[][] matrix, int T) throws Exception {
+        int width = matrix.length;
+        int height = matrix[0].length;
+        for (int ctr = 0; ctr < width; ctr++)
+            for (int itr = 0; itr < height; itr++) {
+                if (matrix[ctr][itr] > T) matrix[ctr][itr] = new Color(255,255,255).getRGB();
+                else matrix[ctr][itr] = new Color(0,0,0).getRGB();
+            }
+    }
+
+    //NormalBinaryImage func. big integer version
     public static void NormalBinaryImage(BigInteger[][] matrix, int T, Paillier pp) throws Exception {
         BigInteger black = pp.encrypt(new BigInteger("16777215"));
         BigInteger white = pp.encrypt(new BigInteger("0"));
@@ -740,16 +689,7 @@ public class ImgHandler {
             }
     }
 
-    public static void NormalBinaryImage(int[][] matrix, int T) throws Exception {
-        int width = matrix.length;
-        int height = matrix[0].length;
-        for (int ctr = 0; ctr < width; ctr++)
-            for (int itr = 0; itr < height; itr++) {
-                if (matrix[ctr][itr] > T) matrix[ctr][itr] = new Color(255,255,255).getRGB();
-                else matrix[ctr][itr] = new Color(0,0,0).getRGB();
-            }
-    }
-
+    //get the histo of a matrix
     public static int[] getHisto(int[][] data) throws Exception {
         int histo[] = new int[256];
         //int sizz = data.length * data[0].length;
@@ -762,6 +702,7 @@ public class ImgHandler {
         return histo;
     }
 
+    //get the double histo of a matrix
     public static double[] getHistoo(int[][] data) throws Exception {
         double histo[] = new double[256];
         int sizz = data.length * data[0].length;
@@ -776,6 +717,7 @@ public class ImgHandler {
         return histo;
     }
 
+    //get the threshold of a matrix in an iteration way
     public static int iterationGetThreshold(int[][] data) throws Exception {
         int min = data[0][0], max = data[0][0];
         int sizz = data.length * data[0].length;
@@ -808,6 +750,7 @@ public class ImgHandler {
         return newThreshold;
     }
 
+    //take apart the matrix and handle them
     public static int[][] inPeices(int[][] matrix, int pie) throws Exception {
         //int pie = 2;
         int sX = (matrix.length - 6) / pie, sY = (matrix[0].length - 6) / pie;
@@ -837,6 +780,7 @@ public class ImgHandler {
         return newMatrix;
     }
 
+    //shit, i forgot it
     public static ArrayList<h> getArrayListOfHist(int[][] inputH, double rate, boolean flag) {
         ArrayList<h> res = new ArrayList<>();
         ArrayList<h> res0 = new ArrayList<>();
@@ -867,6 +811,7 @@ public class ImgHandler {
         return res0;
     }
 
+    //hough main func.
     public static void hough(int[][] inputI) {
         int h = inputI.length, w = inputI[0].length;
         int ro = (int)Math.sqrt(h * h + w * w);
@@ -910,6 +855,7 @@ public class ImgHandler {
         }
     }
 
+    //hough func. big integer version
     public static void hough(BigInteger[][] inputI, Paillier pp) throws Exception {
         BigInteger BRed = BigInteger.valueOf(0xFF0000);
         int h = inputI.length, w = inputI[0].length;
@@ -942,6 +888,7 @@ public class ImgHandler {
         }
     }
 
+    //get 2-pass of a matrix
     public static void make(int[][] input, String fileName) throws Exception {
         for (int ctr = 0; ctr < input.length; ctr++) input[ctr][0] = input[ctr][input[0].length - 1] = 255;
         for (int ctr = 0; ctr < input[0].length; ctr++) input[0][ctr] = input[input.length - 1][ctr] = 255;
@@ -953,6 +900,7 @@ public class ImgHandler {
         //temp2d.showLabel();
     }
 
+    //make func. big integer version
     public static void makeB(BigInteger[][] input, String fileName, Paillier pp) throws Exception {
         for (int ctr = 0; ctr < input.length; ctr++) input[ctr][0] = input[ctr][input[0].length - 1] = new BigInteger("255");
         for (int ctr = 0; ctr < input[0].length; ctr++) input[0][ctr] = input[input.length - 1][ctr] = new BigInteger("255");
@@ -963,12 +911,14 @@ public class ImgHandler {
         temp2d.bDrawColor(fileName);
     }
 
+    //gamma the matrix
     static public void GammaSch(int[][] input) {
         for (int ctr = 0; ctr < input.length; ctr++)
             for (int itr = 0; itr < input[0].length; itr++)
                 input[ctr][itr] = (int)Math.sqrt(input[ctr][itr]);
     }
 
+    //gamma the matrix and get the double res
     static public double[][] GammaSchD(int[][] input) {
         double[][] res = new double[input.length][input[0].length];
         for (int ctr = 0; ctr < input.length; ctr++)
@@ -977,6 +927,7 @@ public class ImgHandler {
         return res;
     }
 
+    //get the gradient of a matrix(abd)
     static public void getGradient(int[][] input, int[][] output1, double[][] output2) {
         int gx, gy;
         for (int ctr = 0; ctr < output1.length; ctr++)
@@ -993,6 +944,7 @@ public class ImgHandler {
         }
     }
 
+    //get the double gradient of a matrix(abd)
     static public void getGradientD(double[][] input, double[][] output1, double[][] output2) {
         double gx, gy;
         for (int ctr = 0; ctr < output1.length; ctr++)
@@ -1009,6 +961,7 @@ public class ImgHandler {
         }
     }
 
+    //turn the hos into a radio
     static public int getHosOfHog(double input) {
         if (input <= Math.PI / 8 && input > -Math.PI / 8) return 0;
         else if (input <= 3 * Math.PI / 8 && input > Math.PI / 8) return 1;
@@ -1020,6 +973,7 @@ public class ImgHandler {
         else return 4;
     }
 
+    //put the whole matrix into a bin
     static public int[][][] binIt(int[][] input1, double[][] input2) {
         //eight dem
         int sizeOC = 3;
@@ -1042,6 +996,7 @@ public class ImgHandler {
         return bin;
     }
 
+    //binIt func. big integer version
     static public double[][][] binIt(double[][] input1, double[][] input2) {
         //eight dem
         int sizeOC = 3;
@@ -1064,6 +1019,7 @@ public class ImgHandler {
         return bin;
     }
 
+    //block the matrix
     static public int[][][] blockIt(int[][][] matrix) {
         //9-cell block
         int[][][] res = new int[matrix.length - 2][matrix[0].length - 2][8];
@@ -1079,6 +1035,7 @@ public class ImgHandler {
         return res;
     }
 
+    //blockIt func. big integer version
     static public double[][][] blockIt(double[][][] matrix) {
         //9-cell block
         double[][][] res = new double[matrix.length - 2][matrix[0].length - 2][8];
@@ -1094,6 +1051,7 @@ public class ImgHandler {
         return res;
     }
 
+    //the 8-pass matrix into a 1-pass matrix
     static public double[][][] toOne(int[][][] matrix) {
         double[][][] res = new double[matrix.length][matrix[0].length][8];
         for (int ctr = 0; ctr < matrix.length; ctr++)
@@ -1108,6 +1066,7 @@ public class ImgHandler {
         return res;
     }
 
+    //toOne func. double version
     static public double[][][] toOne(double[][][] matrix) {
         double[][][] res = new double[matrix.length][matrix[0].length][8];
         for (int ctr = 0; ctr < matrix.length; ctr++)
@@ -1122,6 +1081,7 @@ public class ImgHandler {
         return res;
     }
 
+    //what the fuck
     public static int[][] toThree(int[][] matrix) {
         int h = matrix.length / 3;
         int w = matrix[0].length / 3;
@@ -1132,6 +1092,7 @@ public class ImgHandler {
         return res;
     }
 
+    //test whether the matrix is two value
     public static void totoallyBinThePic(int[][] input) {
         int h = input.length, w = input[0].length;
         int temp = 0;
@@ -1152,7 +1113,7 @@ public class ImgHandler {
         //writeImage(getData("D:\\five.jpg"), "D:\\66.jpg", "D:\\final7.jpg");
 
         //testBinImage("D:\\pic\\test.jpg", "D:\\pic\\asd.bmp");
-        writeImage(getData("F:\\pic\\11.jpg"),"F:\\pic\\tttOf11.bmp");
+        Writer.writeImage(getData("F:\\pic\\11.jpg"),"F:\\pic\\tttOf11.bmp");
 
 
         //writeImage(getBBBData("D:\\ff\\2.jpg"),"D:\\ff\\resOf2.jpg");
