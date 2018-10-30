@@ -105,6 +105,36 @@ public class Transformer {
         return result;
     }
 
+    //turn an image into int Array in a pure way
+    public static int[][] pureImageToIntArray(BufferedImage image) {
+        int width = image.getWidth();
+        int height = image.getHeight();
+        int[][] result = new int[width][height];
+        for (int j = 0; j < width; j++) {
+            for (int i = 0; i < height; i++) {
+                int rgb = image.getRGB(j, i);
+                result[j][i] = (int)((rgb * -1 - 1) / 16777215.0 * 255);
+                if (result[j][i] != 255) System.out.print(result[j][i] + " ");
+            }
+        }
+        System.out.println(" ");
+        return result;
+    }
+
+    //getter pro version
+    public static int[][] proImageToIntArray(BufferedImage image) {
+        int width = image.getWidth();
+        int height = image.getHeight();
+        int[][] result = new int[width][height];
+        for (int j = 0; j < width; j++) {
+            for (int i = 0; i < height; i++) {
+                int rgb = image.getRGB(j, i);
+                result[j][i] = (rgb * -1 - 1);//16777215
+            }
+        }
+        return result;
+    }
+
     //turn an image into int Array
     public static int[][] imageToIntArray(BufferedImage image) {
         int width = image.getWidth();

@@ -212,6 +212,17 @@ public class DoTheImg {
             }
     }
 
+    //binary an image with a threshold T
+    public static void NormalBinaryImagePro(int[][] matrix, int T) throws Exception {
+        int width = matrix.length;
+        int height = matrix[0].length;
+        for (int ctr = 0; ctr < width; ctr++)
+            for (int itr = 0; itr < height; itr++) {
+                if (matrix[ctr][itr] > T) matrix[ctr][itr] = 16777215;
+                else matrix[ctr][itr] = 0;
+            }
+    }
+
     //NormalBinaryImage func. big integer version
     public static void NormalBinaryImage(BigInteger[][] matrix, int T, Paillier pp) throws Exception {
         BigInteger black = pp.encrypt(new BigInteger("16777215"));

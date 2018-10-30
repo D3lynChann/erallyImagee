@@ -15,6 +15,18 @@ public class GetterAndReader {
         return Transformer.imageToIntArray(bimg);
     }
 
+    //turn an image into a matrix in a pure way
+    public static int[][] getDataP(String path) throws Exception {
+        BufferedImage bimg = ImageIO.read(new File(path));
+        return Transformer.pureImageToIntArray(bimg);
+    }
+
+    //turn an image into a matrix in a pure way
+    public static int[][] getDataPro(String path) throws Exception {
+        BufferedImage bimg = ImageIO.read(new File(path));
+        return Transformer.proImageToIntArray(bimg);
+    }
+
     //use the function show below
     public static int[][] getBBBData(String path) throws Exception {
         BufferedImage bimg = ImageIO.read(new File(path));
@@ -48,10 +60,27 @@ public class GetterAndReader {
         return res;
     }
 
+    //get a 1-
+
     //as above, get a big integer matrix
     public static BigInteger[][] getBData(String path, Paillier pp) throws Exception {
         BufferedImage bimg = ImageIO.read(new File(path));
         return Transformer.imageToBigIntArray(bimg, pp);
     }
 
+    //2d
+    public static int[][] getTwoDLabels(int[][] input) throws Exception {
+        twoDCross temp2D = new twoDCross(input);
+        temp2D.init();
+        temp2D.firstPass();
+        return temp2D.labels;
+    }
+
+    //2d?
+    public static int[][] getTwoDLabelf(String file) throws Exception {
+        twoDCross temp2D = new twoDCross(file);
+        temp2D.init();
+        temp2D.firstPass();
+        return temp2D.labels;
+    }
 }

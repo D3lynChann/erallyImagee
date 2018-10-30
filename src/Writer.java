@@ -8,14 +8,26 @@ import java.io.FileWriter;
 import java.math.BigInteger;
 
 public class Writer {
+    //pure writer
+    public static void pureWriter(int[][] matrix, String fileName) throws Exception {
+        //matrix = toThree(matrix);
+        File ImageFile = new File(fileName);
+        //edge detection
+        //GsTrans(matrix);
+        BufferedImage buff;
+        buff = Transformer.IntArrayToBinImage(matrix);
+        ImageIO.write(buff, "bmp", ImageFile);
+    }
+
 
     //a good write image function, the main function
     public static void writeImage(int[][] matrix, String fileName) throws Exception {
         //matrix = toThree(matrix);
         File ImageFile = new File(fileName);
         //edge detection
-        matrix = HybridSystem.inPeices(matrix, 2);
-        matrix = DoTheImg.whitePic(matrix);
+        //matrix = HybridSystem.inPeices(matrix, 2);
+        matrix = HybridSystem.inPeices2(matrix, 2);
+        //matrix = DoTheImg.whitePic(matrix);
         //GsTrans(matrix);
         BufferedImage buff;
         buff = Transformer.IntArrayToBinImage(matrix);
@@ -130,5 +142,15 @@ public class Writer {
         fw.close();
     }
 
+    //write integer matrix into a file
+    public static void writeToFile(String path, int[][] input) throws Exception {
+        FileWriter fw = new FileWriter(new File(path));
+        BufferedWriter bw = new BufferedWriter(fw);
+        for (int ctr = 0; ctr < input.length; ctr++)
+            for (int itr = 0; itr < input[0].length; itr++)
+                bw.write(input[ctr][itr] + " ");
+        bw.close();
+        fw.close();
+    }
 
 }

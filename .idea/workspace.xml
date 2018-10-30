@@ -2,13 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c40f1fe9-8117-4503-9ec8-0009d58f1bba" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DoTheImg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GetterAndReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Houghh.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HybridSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Transformer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Imagee/DoTheImg.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Imagee/DoTheImg.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Imagee/GetterAndReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Imagee/GetterAndReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Imagee/HybridSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Imagee/HybridSystem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Imagee/ImgHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Imagee/ImgHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Imagee/Transformer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Imagee/Transformer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Imagee/Writer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Imagee/Writer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Imagee/twoDCross.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Imagee/twoDCross.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoTheImg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoTheImg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetterAndReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetterAndReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HybridSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HybridSystem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ImgHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ImgHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Transformer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transformer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Writer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Writer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/twoDCross.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/twoDCross.java" afterDir="false" />
     </list>
     <ignored path="Imagee.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,33 +35,37 @@
     <session id="-2070306646">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.52" value="1" />
+          <entry key="project.open.time.53" value="1" />
           <entry key="project.open.time.58" value="1" />
+          <entry key="project.open.time.60" value="1" />
           <entry key="project.open.time.61" value="1" />
           <entry key="project.open.time.74" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.open.time.98" value="1" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2164" />
+          <entry key="java" value="5109" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2164" />
+          <entry key="JAVA" value="5109" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="9" />
+          <entry key="java" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="9" />
+          <entry key="JAVA" value="13" />
         </counts>
       </usages-collector>
     </session>
@@ -66,12 +78,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ImgHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+            <state relative-caret-position="124">
+              <caret line="120" column="82" selection-start-line="120" selection-start-column="82" selection-end-line="120" selection-end-column="82" />
               <folding>
                 <element signature="docComment;class#ImgHandler#0" />
-                <element signature="e#47539#47572#0" />
-                <element signature="e#48341#48404#0" />
               </folding>
             </state>
           </provider>
@@ -80,8 +90,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GetterAndReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="47" column="19" lean-forward="true" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
+            <state relative-caret-position="350">
+              <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -90,10 +100,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/twoDCross.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1369">
+              <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Kmeans002.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5460">
+              <caret line="185" column="21" selection-start-line="185" selection-start-column="21" selection-end-line="185" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DoTheImg.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3733">
-              <caret line="92" column="58" selection-start-line="92" selection-start-column="58" selection-end-line="92" selection-end-column="58" />
+            <state relative-caret-position="440">
+              <caret line="220" column="61" selection-start-line="220" selection-start-column="61" selection-end-line="220" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,13 +132,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Houghh.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1740">
+            <state relative-caret-position="424">
               <caret line="319" selection-start-line="319" selection-end-line="319" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#getArrayListOfHist#0;class#Houghh#0" />
                 <element signature="method#hough#0;class#Houghh#0" />
-                <element signature="e#2658#2705#0" />
                 <element signature="method#hough#1;class#Houghh#0" />
                 <element signature="method#make#0;class#Houghh#0" />
                 <element signature="method#makeB#0;class#Houghh#0" />
@@ -134,8 +161,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Transformer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="217" column="4" lean-forward="true" selection-start-line="217" selection-start-column="4" selection-end-line="217" selection-end-column="4" />
+            <state relative-caret-position="341">
+              <caret line="131" column="31" selection-start-line="131" selection-start-column="31" selection-end-line="131" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -146,10 +173,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/HybridSystem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5190">
-              <caret line="173" column="64" lean-forward="true" selection-start-line="173" selection-start-column="64" selection-end-line="173" selection-end-column="64" />
+            <state relative-caret-position="-469">
+              <caret line="375" column="28" selection-start-line="375" selection-start-column="28" selection-end-line="375" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#GsTrans#1;class#HybridSystem#0" />
               </folding>
             </state>
           </provider>
@@ -158,11 +186,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Writer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="827">
-              <caret line="116" column="32" lean-forward="true" selection-start-line="116" selection-start-column="32" selection-end-line="116" selection-end-column="32" />
+            <state relative-caret-position="470">
+              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#writeBigToFile#0;class#Writer#0" />
               </folding>
             </state>
           </provider>
@@ -197,7 +224,6 @@
         <option value="$PROJECT_DIR$/src/EdgeDetector.java" />
         <option value="$PROJECT_DIR$/src/circuit/h.java" />
         <option value="$PROJECT_DIR$/src/Image.java" />
-        <option value="$PROJECT_DIR$/src/Imagee.java" />
         <option value="$PROJECT_DIR$/src/SimpleSvmWithoutKernel.java" />
         <option value="$PROJECT_DIR$/src/Kmeans/Data.java" />
         <option value="$PROJECT_DIR$/src/Kmeans/DataProcessImpl.java" />
@@ -208,15 +234,16 @@
         <option value="$PROJECT_DIR$/src/HE/DDouble.java" />
         <option value="$PROJECT_DIR$/src/HE/Paillier.java" />
         <option value="$PROJECT_DIR$/src/Kmeans003.java" />
-        <option value="$PROJECT_DIR$/src/Kmeans002.java" />
-        <option value="$PROJECT_DIR$/src/twoDCross.java" />
         <option value="$PROJECT_DIR$/src/Houghh.java" />
-        <option value="$PROJECT_DIR$/src/ImgHandler.java" />
-        <option value="$PROJECT_DIR$/src/GetterAndReader.java" />
+        <option value="$PROJECT_DIR$/src/Imagee.java" />
+        <option value="$PROJECT_DIR$/src/Kmeans002.java" />
+        <option value="$PROJECT_DIR$/src/Writer.java" />
+        <option value="$PROJECT_DIR$/src/twoDCross.java" />
         <option value="$PROJECT_DIR$/src/DoTheImg.java" />
+        <option value="$PROJECT_DIR$/src/GetterAndReader.java" />
         <option value="$PROJECT_DIR$/src/Transformer.java" />
         <option value="$PROJECT_DIR$/src/HybridSystem.java" />
-        <option value="$PROJECT_DIR$/src/Writer.java" />
+        <option value="$PROJECT_DIR$/src/ImgHandler.java" />
       </list>
     </option>
   </component>
@@ -234,8 +261,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="355" />
+    <option name="y" value="-17" />
     <option name="width" value="1456" />
     <option name="height" value="876" />
   </component>
@@ -266,6 +293,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -282,7 +310,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -290,7 +317,7 @@
     <property name="SearchEverywhereHistoryKey" value="manhattan&#9;PSI&#9;JAVA://Kmeans002#manhattanDistince&#10;KM&#9;PSI&#9;JAVA://Kmeans02.Kmeans" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540293242209" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540532282311" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files (x86)\nodejs\node.exe" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -686,19 +713,23 @@
       <workItem from="1540128616303" duration="2365000" />
       <workItem from="1540210031498" duration="3996000" />
       <workItem from="1540267619333" duration="661000" />
-      <workItem from="1540291954094" duration="1151000" />
+      <workItem from="1540291954094" duration="1338000" />
+      <workItem from="1540386060172" duration="589000" />
+      <workItem from="1540438523531" duration="5510000" />
+      <workItem from="1540528206347" duration="4308000" />
+      <workItem from="1540866978234" duration="7658000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="344578000" />
+    <option name="totallyTimeSpent" value="362830000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.1401919" />
-      <window_info active="true" id="Structure" order="1" visible="true" weight="0.20149253" />
+      <window_info id="Structure" order="1" visible="true" weight="0.21002132" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Image Layers" order="4" />
@@ -706,8 +737,8 @@
       <window_info id="Palette&#9;" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32974428" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.09120521" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42019543" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3995657" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -897,27 +928,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Kmeans003.java" />
     <entry file="file://$PROJECT_DIR$/src/SimpleSvmWithoutKernel.java" />
-    <entry file="file://$PROJECT_DIR$/src/Imagee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2760">
-          <caret line="97" column="75" selection-start-line="97" selection-start-column="75" selection-end-line="97" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/twoDCross.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6690">
-          <caret line="233" column="33" selection-start-line="233" selection-start-column="33" selection-end-line="233" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kmeans002.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5220">
-          <caret line="177" column="20" selection-start-line="177" selection-start-column="20" selection-end-line="177" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/HE/PaillierDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -925,55 +935,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GetterAndReader.java">
+    <entry file="file://$PROJECT_DIR$/src/Imagee.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="47" column="19" lean-forward="true" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="2760">
+          <caret line="97" column="29" selection-start-line="97" selection-start-column="29" selection-end-line="97" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DoTheImg.java">
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_171/src.zip!/javax/imageio/ImageIO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3733">
-          <caret line="92" column="58" selection-start-line="92" selection-start-column="58" selection-end-line="92" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="169">
+          <caret line="1300" selection-start-line="1300" selection-end-line="1300" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Transformer.java">
+    <entry file="file://$PROJECT_DIR$/src/Kmeans002.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="217" column="4" lean-forward="true" selection-start-line="217" selection-start-column="4" selection-end-line="217" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HybridSystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5190">
-          <caret line="173" column="64" lean-forward="true" selection-start-line="173" selection-start-column="64" selection-end-line="173" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="5460">
+          <caret line="185" column="21" selection-start-line="185" selection-start-column="21" selection-end-line="185" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Houghh.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1740">
+        <state relative-caret-position="424">
           <caret line="319" selection-start-line="319" selection-end-line="319" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getArrayListOfHist#0;class#Houghh#0" />
             <element signature="method#hough#0;class#Houghh#0" />
-            <element signature="e#2658#2705#0" />
             <element signature="method#hough#1;class#Houghh#0" />
             <element signature="method#make#0;class#Houghh#0" />
             <element signature="method#makeB#0;class#Houghh#0" />
@@ -993,25 +983,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Writer.java">
+    <entry file="file://$PROJECT_DIR$/src/twoDCross.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="827">
-          <caret line="116" column="32" lean-forward="true" selection-start-line="116" selection-start-column="32" selection-end-line="116" selection-end-column="32" />
+        <state relative-caret-position="-1369">
+          <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DoTheImg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="220" column="61" selection-start-line="220" selection-start-column="61" selection-end-line="220" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#writeBigToFile#0;class#Writer#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Writer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GetterAndReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Transformer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="131" column="31" selection-start-line="131" selection-start-column="31" selection-end-line="131" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HybridSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-469">
+          <caret line="375" column="28" selection-start-line="375" selection-start-column="28" selection-end-line="375" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#GsTrans#1;class#HybridSystem#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ImgHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+        <state relative-caret-position="124">
+          <caret line="120" column="82" selection-start-line="120" selection-start-column="82" selection-end-line="120" selection-end-column="82" />
           <folding>
             <element signature="docComment;class#ImgHandler#0" />
-            <element signature="e#47539#47572#0" />
-            <element signature="e#48341#48404#0" />
           </folding>
         </state>
       </provider>

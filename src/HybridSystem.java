@@ -82,6 +82,29 @@ public class HybridSystem {
         return d;
     }
 
+    //Sobel operator
+    public static int[][] SobelItPro(int[][] data) throws Exception {
+        int w = data[0].length;
+        int h = data.length;
+        int[][] d= new int[h][w];
+
+        for(int ctr=1;ctr<h-1;ctr++){
+            for(int itr=1;itr<w-1;itr++){
+                int s1 = data[ctr - 1][itr + 1] + 2 * data[ctr][itr + 1] + data[ctr + 1][itr + 1] -
+                        data[ctr - 1][itr - 1] - 2 * data[ctr][itr - 1] - data[ctr + 1][itr - 1];
+                int s2 = data[ctr - 1][itr - 1] +  2 * data[ctr - 1][itr] + data[ctr - 1][itr + 1] -
+                        data[ctr + 1][itr - 1] - 2 * data[ctr + 1][itr] - data[ctr + 1][itr + 1];
+                int s  = Math.abs(s1)+Math.abs(s2);
+                if(s < 0)
+                    s =0;
+                if(s > 16777215)
+                    s = 16777215;
+                d[ctr][itr] = s;
+            }
+        }
+        return d;
+    }
+
     //Laplas operator
     public static int[][] LplsIt(int[][] data) throws Exception {
         int[][] res = new int[data.length][data[0].length];
@@ -98,7 +121,20 @@ public class HybridSystem {
         }
         return res;
     }
+    //16777215
 
+    //get the histo of a matrix pro version
+    public static int[] getHistoPro(int[][] data) throws Exception {
+        int histo[] = new int[16777215];
+        //int sizz = data.length * data[0].length;
+        for (int ctr = 0; ctr < data.length; ctr++)
+            for (int itr = 0; itr < data[0].length; itr++) {
+                if (data[ctr][itr] > 16777215) data[ctr][itr] = 16777215;
+                if (data[ctr][itr] < 0) data[ctr][itr] = 0;
+                histo[data[ctr][itr]]++;
+            }
+        return histo;
+    }
 
     //get the histo of a matrix
     public static int[] getHisto(int[][] data) throws Exception {
@@ -110,6 +146,30 @@ public class HybridSystem {
                 if (data[ctr][itr] < 0) data[ctr][itr] = 0;
                 histo[data[ctr][itr]]++;
             }
+        return histo;
+    }
+
+    //get the histo of a 1-d matrix pro version
+    public static int[] getHistoPro(int[] data) throws Exception {
+        int histo[] = new int[16777216];
+        //int sizz = data.length * data[0].length;
+        for (int ctr = 0; ctr < data.length; ctr++) {
+            if (data[ctr] > 16777215) data[ctr] = 16777215;
+            if (data[ctr] < 0) data[ctr] = 0;
+            histo[data[ctr]]++;
+        }
+        return histo;
+    }
+
+    //get the histo of a 1-d matrix
+    public static int[] getHisto(int[] data) throws Exception {
+        int histo[] = new int[256];
+        //int sizz = data.length * data[0].length;
+        for (int ctr = 0; ctr < data.length; ctr++) {
+            if (data[ctr] > 255) data[ctr] = 255;
+            if (data[ctr] < 0) data[ctr] = 0;
+            histo[data[ctr]]++;
+        }
         return histo;
     }
 
@@ -126,6 +186,132 @@ public class HybridSystem {
         for (int ctr = 0; ctr < 255; ctr++)
             histo[ctr] = (double)histo[ctr]/sizz;
         return histo;
+    }
+
+    //1-d get histoo
+    public static double[] getHistoo(int[] data) throws Exception {
+        double histo[] = new double[256];
+        int sizz = data.length;
+        for (int ctr = 0; ctr < data.length; ctr++) {
+            if (data[ctr] > 255) data[ctr] = 255;
+            if (data[ctr] < 0) data[ctr] = 0;
+            histo[data[ctr]]++;
+        }
+        for (int ctr = 0; ctr < 255; ctr++)
+            histo[ctr] = (double)histo[ctr]/sizz;
+        return histo;
+    }
+
+    //16777215
+    //get iteration threshold 1-d version
+    public static int iterationGetThresholdPro(int[] data) throws Exception {
+        int min = data[0], max = data[0];
+        int sizz = data.length;
+        for (int ctr = 0; ctr < data.length; ctr++) {
+            if (data[ctr] > 16777215) data[ctr] = 16777215;
+            if (data[ctr] < 0) data[ctr] = 0;
+            if (min > data[ctr]) min = data[ctr];
+            if (max < data[ctr]) max = data[ctr];
+        }
+        int histo[] = getHistoPro(data);
+        int threshold = 0;
+        int newThreshold = (min + max) / 2;
+        //System.out.println(newThreshold);
+        int cc = 1;
+        while (threshold != newThreshold) {
+            long sum1 = 0, sum2 = 0, w1 = 0, w2 = 0;
+            int avg1, avg2;
+            for (int ctr = min; ctr < newThreshold; ctr++) {
+                sum1 += histo[ctr] * ctr;
+                w1 += histo[ctr];
+            }
+            avg1 = (int)(sum1/ w1);
+            for (int ctr = newThreshold; ctr < max; ctr++) {
+                sum2 += histo[ctr] * ctr;
+                w2 += histo[ctr];
+            }
+            avg2 = (int)(sum2/ w2);
+            threshold = newThreshold;
+            newThreshold = (avg1+avg2)/2;
+/*
+            System.out.println("Round " + cc);
+            cc += 1;
+            System.out.println("sum1: " + sum1);
+            System.out.println("w1: " + w1);
+            System.out.println("sum2: " + sum1);
+            System.out.println("w2: " + w1);
+            System.out.println("min: " + min);
+            System.out.println("max: " + max);
+            System.out.println("newThres: " + newThreshold);
+            */
+        }
+        return newThreshold;
+    }
+
+    //get iteration threshold 1-d version
+    public static int iterationGetThreshold(int[] data) throws Exception {
+        int min = data[0], max = data[0];
+        int sizz = data.length;
+        for (int ctr = 0; ctr < data.length; ctr++) {
+            if (data[ctr] > 255) data[ctr] = 255;
+            if (data[ctr] < 0) data[ctr] = 0;
+            if (min > data[ctr]) min = data[ctr];
+            if (max < data[ctr]) max = data[ctr];
+        }
+        int histo[] = getHisto(data);
+        int threshold = 0;
+        int newThreshold = (min + max) / 2;
+        while (threshold != newThreshold) {
+            int sum1 = 0, sum2 = 0, w1 = 0, w2 = 0;
+            int avg1, avg2;
+            for (int ctr = min; ctr < newThreshold; ctr++) {
+                sum1 += histo[ctr] * ctr;
+                w1 += histo[ctr];
+            }
+            avg1 = (int)(sum1/ w1);
+            for (int ctr = newThreshold; ctr < max; ctr++) {
+                sum2 += histo[ctr] * ctr;
+                w2 += histo[ctr];
+            }
+            avg2 = (int)(sum2/ w2);
+            threshold = newThreshold;
+            newThreshold = (avg1+avg2)/2;
+        }
+        return newThreshold;
+    }
+
+    //16777215
+    //get the threshold of a matrix in an iteration way
+    public static int iterationGetThresholdPro(int[][] data) throws Exception {
+        int min = data[0][0], max = data[0][0];
+        int sizz = data.length * data[0].length;
+        for (int ctr = 0; ctr < data.length; ctr++)
+            for (int itr = 0; itr < data[0].length; itr++) {
+                if (data[ctr][itr] > 16777215) data[ctr][itr] = 16777215;
+                if (data[ctr][itr] < 0) data[ctr][itr] = 0;
+                if (min > data[ctr][itr]) min = data[ctr][itr];
+                if (max < data[ctr][itr]) max = data[ctr][itr];
+            }
+        int histo[] = getHisto(data);
+        int threshold = 0;
+        int newThreshold = (min + max) / 2;
+        while (threshold != newThreshold) {
+            int sum1 = 0, sum2 = 0, w1 = 0, w2 = 0;
+            int avg1, avg2;
+            for (int ctr = min; ctr < newThreshold; ctr++) {
+                sum1 += histo[ctr] * ctr;
+                w1 += histo[ctr];
+            }
+            avg1 = (int)(sum1/ w1);
+            for (int ctr = newThreshold; ctr < max; ctr++) {
+                sum2 += histo[ctr] * ctr;
+                w2 += histo[ctr];
+            }
+            avg2 = (int)(sum2/ w2);
+            threshold = newThreshold;
+            newThreshold = (avg1+avg2)/2;
+        }
+        return newThreshold;
     }
 
     //get the threshold of a matrix in an iteration way
@@ -161,6 +347,58 @@ public class HybridSystem {
         return newThreshold;
     }
 
+    //get the middle of a array
+    public static int middle(int[] input) {
+        int min = input[0], max = input[0];
+        for (int item: input) {
+            if (min > item) min = item;
+            if (max < item) max = item;
+        }
+        return (min + max) / 2;
+    }
+
+    //16777215
+    //take apart the matrix and handle them
+    public static int[][] inPeices4(int[][] matrix, int[] labels, int pie) throws Exception {
+        //int pie = 2;
+        int sX = (matrix.length - 6) / pie, sY = (matrix[0].length - 6) / pie;
+        int[][][][] temppMatrix = new int[pie + 1][pie + 1][sX + 6][sY + 6];
+        int[][][][] resMatrix = new int[pie + 1][pie + 1][sX][sY];
+        for (int ctr = 0; ctr < pie; ctr++)
+            for (int itr = 0; itr < pie; itr++)
+                for (int x = 0; x < sX + 6; x++)
+                    for (int y = 0; y < sY + 6; y++)
+                        temppMatrix[ctr][itr][x][y] = matrix[ctr * sX + x][itr * sY + y];
+        for (int ctr = 0; ctr < pie; ctr++)
+            for (int itr = 0; itr < pie; itr++) {
+                GsTrans(temppMatrix[ctr][itr]);
+                //1374195
+                int thres = iterationGetThresholdPro(labels);
+                System.out.println(thres);
+                DoTheImg.NormalBinaryImagePro(temppMatrix[ctr][itr], thres);
+                temppMatrix[ctr][itr] = SobelItPro(temppMatrix[ctr][itr]);
+                Writer.pureWriter(temppMatrix[ctr][itr], "F:\\pic\\pjs\\tempres" + (ctr * pie + itr) + ".bmp");
+                for (int x = 0; x < sX; x++)
+                    for (int y = 0; y < sY; y++)
+                        resMatrix[ctr][itr][x][y] = temppMatrix[ctr][itr][x + 3][y + 3];
+            }
+
+        int[][] newMatrix = new int[pie * sX][pie * sY];
+        for (int a = 0; a < pie; a++)
+            for (int b = 0; b < pie; b++)
+                for (int c = 0; c < sX; c++)
+                    for (int d = 0; d < sY; d++)
+                        newMatrix[a * sX + c][b * sY + d] = resMatrix[a][b][c][d];
+
+        for (int ctr = 0; ctr < newMatrix.length; ctr++) {
+            for (int itr = 0; itr < newMatrix[0].length; itr++) {
+                newMatrix[ctr][itr] = -1 * newMatrix[ctr][itr] - 1;
+            }
+        }
+        Writer.pureWriter(newMatrix, "F:\\pic\\pjs\\tempres.bmp");
+        return newMatrix;
+    }
+
     //take apart the matrix and handle them
     public static int[][] inPeices(int[][] matrix, int pie) throws Exception {
         //int pie = 2;
@@ -191,5 +429,65 @@ public class HybridSystem {
         return newMatrix;
     }
 
+
+    //take apart the matrix and handle them
+    public static int[][] inPeices3(int[][] matrix, int[] labels, int pie) throws Exception {
+        //int pie = 2;
+        int sX = (matrix.length - 6) / pie, sY = (matrix[0].length - 6) / pie;
+        int[][][][] temppMatrix = new int[pie + 1][pie + 1][sX + 6][sY + 6];
+        int[][][][] resMatrix = new int[pie + 1][pie + 1][sX][sY];
+        for (int ctr = 0; ctr < pie; ctr++)
+            for (int itr = 0; itr < pie; itr++)
+                for (int x = 0; x < sX + 6; x++)
+                    for (int y = 0; y < sY + 6; y++)
+                        temppMatrix[ctr][itr][x][y] = matrix[ctr * sX + x][itr * sY + y];
+        for (int ctr = 0; ctr < pie; ctr++)
+            for (int itr = 0; itr < pie; itr++) {
+                GsTrans(temppMatrix[ctr][itr]);
+                DoTheImg.NormalBinaryImage(temppMatrix[ctr][itr], iterationGetThreshold(labels));
+                temppMatrix[ctr][itr] = SobelIt(temppMatrix[ctr][itr]);
+                for (int x = 0; x < sX; x++)
+                    for (int y = 0; y < sY; y++)
+                        resMatrix[ctr][itr][x][y] = temppMatrix[ctr][itr][x + 3][y + 3];
+            }
+
+        int[][] newMatrix = new int[pie * sX][pie * sY];
+        for (int a = 0; a < pie; a++)
+            for (int b = 0; b < pie; b++)
+                for (int c = 0; c < sX; c++)
+                    for (int d = 0; d < sY; d++)
+                        newMatrix[a * sX + c][b * sY + d] = resMatrix[a][b][c][d];
+        return newMatrix;
+    }
+
+    //take apart the matrix and handle them
+    public static int[][] inPeices2(int[][] matrix, int pie) throws Exception {
+        //int pie = 2;
+        int sX = (matrix.length - 6) / pie, sY = (matrix[0].length - 6) / pie;
+        int[][][][] temppMatrix = new int[pie + 1][pie + 1][sX + 6][sY + 6];
+        int[][][][] resMatrix = new int[pie + 1][pie + 1][sX][sY];
+        for (int ctr = 0; ctr < pie; ctr++)
+            for (int itr = 0; itr < pie; itr++)
+                for (int x = 0; x < sX + 6; x++)
+                    for (int y = 0; y < sY + 6; y++)
+                        temppMatrix[ctr][itr][x][y] = matrix[ctr * sX + x][itr * sY + y];
+        for (int ctr = 0; ctr < pie; ctr++)
+            for (int itr = 0; itr < pie; itr++) {
+                GsTrans(temppMatrix[ctr][itr]);
+                DoTheImg.NormalBinaryImage(temppMatrix[ctr][itr], 500);
+                temppMatrix[ctr][itr] = SobelIt(temppMatrix[ctr][itr]);
+                for (int x = 0; x < sX; x++)
+                    for (int y = 0; y < sY; y++)
+                        resMatrix[ctr][itr][x][y] = temppMatrix[ctr][itr][x + 3][y + 3];
+            }
+
+        int[][] newMatrix = new int[pie * sX][pie * sY];
+        for (int a = 0; a < pie; a++)
+            for (int b = 0; b < pie; b++)
+                for (int c = 0; c < sX; c++)
+                    for (int d = 0; d < sY; d++)
+                        newMatrix[a * sX + c][b * sY + d] = resMatrix[a][b][c][d];
+        return newMatrix;
+    }
 
 }

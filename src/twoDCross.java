@@ -34,7 +34,7 @@ public class twoDCross {
     static public BigInteger BVALID = new BigInteger("0");
     static public BigInteger BINVALID = new BigInteger("255");
     public twoDCross(int[][] input) throws Exception {
-        matrix = input;
+        matrix = DoTheImg.whitePic(input);
     }
     public twoDCross(BigInteger[][] input, Paillier pp) throws Exception {
         bmatrix = input;
@@ -45,7 +45,7 @@ public class twoDCross {
     }
     public twoDCross(String fileName) throws Exception {
         BufferedImage bimg = ImageIO.read(new File(fileName));
-        matrix = Transformer.imageToIntArray(bimg);
+        matrix = DoTheImg.whitePic(Transformer.imageToIntArray(bimg));
     }
     public void init() {
         int height = matrix.length;
@@ -141,7 +141,7 @@ public class twoDCross {
         //labels = matrix;
         for (int ctr = 0; ctr < labels.length; ctr++) {
             for (int itr = 0; itr < labels[0].length; itr++)
-                System.out.print(labels[ctr][itr] + "  ");
+                System.out.print(labels[ctr][itr]);
             System.out.println("");
         }
     }
@@ -216,26 +216,15 @@ public class twoDCross {
         return res;
     }
 
+
     static public void main(String []args) throws Exception {
-        int[][] temp = {{0, 1, 0, 1, 0, 1, 0, 0},
-                        {0, 1, 0, 1, 1, 1, 1, 0},
-                        {0, 1, 0, 0, 1, 0, 1, 0},
-                        {0, 1, 0, 0, 0, 1, 1, 0},
-                        {0, 1, 0, 1, 1, 1, 0, 0}};
-        //twoDCross temp2D = new twoDCross(temp);
-        Paillier pp = new Paillier(8);
-        BigInteger[][] bTemp = {{new BigInteger("0"), new BigInteger("1"), new BigInteger("0")},
-                                {new BigInteger("1"), new BigInteger("1"), new BigInteger("0")},
-                                {new BigInteger("0"), new BigInteger("0"), new BigInteger("1")}};
-        for (int ctr = 0; ctr < 3; ctr++)
-            for (int itr = 0; itr < 3; itr++)
-                bTemp[ctr][itr] = pp.encrypt(bTemp[ctr][itr]);
-        twoDCross temp2D = new twoDCross("D:\\pic\\tttOf1.jpg");
+        twoDCross temp2D = new twoDCross("F:\\pic\\pjs\\tttOf11A.jpg");
         //twoDCross temp2D = new twoDCross(bTemp, pp);
         temp2D.init();
         temp2D.firstPass();
         //temp2D.showNumOfRunsPerRow();
         //temp2D.showLabel();
-        temp2D.drawColor("D:\\pic\\res2018.jpg");
+        //Writer.writeToFile("F:\\pic\\pjs\\labels.txt", temp2D.labels);
+        temp2D.drawColor("F:\\pic\\pjs\\res2018.bmp");
     }
 }
