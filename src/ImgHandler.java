@@ -119,10 +119,14 @@ public class ImgHandler {
         //pj_s_thought(res);
         //System.out.println(new Color(255,255,255).getRGB());
         //DoTheImg.binaryTheImage("F:\\pic\\a.jpg", "F:\\pic\\ls\\b.bmp");
-        int[][] res = GetterAndReader.getDataP("F:\\pic\\Ls\\L2.jpg");
-        DoTheImg.NormalBinaryImage(res,185);
-        Writer.pureWriterP(res, "F:\\pic\\Ls\\L2r.jpg");
-        //DoTheImg.getColorImage("F:\\pic\\ls\\L1.jpg", "F:\\pic\\ls\\L2.jpg", "F:\\pic\\ls\\L1temp.bmp");
+        //int[][] res = GetterAndReader.getData("F:\\pic\\Ls\\L2.jpg");
+        //DoTheImg.print(res);
+        //Houghh.GammaSch(res);
+        //DoTheImg.print(res);
+        //Writer.pureWriterP(res, "F:\\pic\\Ls\\L2r.bmp");
+        DoTheImg.combineTwoImage("F:\\pic\\ls\\gzz123.jpg", "F:\\pic\\ls\\gz2.jpg", "F:\\pic\\ls\\gzz1234.bmp");
+        //DoTheImg.getColorImage("F:\\pic\\ls\\gz3.jpg", "F:\\pic\\ls\\gz1.jpg", "F:\\pic\\ls\\gzz123.jpg");
+        //DoTheImg.getTheRestPp("F:\\pic\\ls\\L1.jpg", "F:\\pic\\ls\\gz1.jpg", "F:\\pic\\ls\\gz2.jpg", "F:\\pic\\ls\\gz3.jpg");
         //pjs3("F:\\pic\\pjs\\l2.jpg", "F:\\pic\\pjs\\l1.jpg", "F:\\pic\\pjs\\res2.bmp");
         //pjs3("F:\\pic\\four.jpg", "F:\\pic\\pjs\\res1.jpg", "F:\\pic\\pjs\\res2.jpg");
         //writeImage(getBBBData("D:\\ff\\2.jpg"),"D:\\ff\\resOf2.jpg");

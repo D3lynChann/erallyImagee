@@ -141,7 +141,9 @@ public class Houghh {
     static public void GammaSch(int[][] input) {
         for (int ctr = 0; ctr < input.length; ctr++)
             for (int itr = 0; itr < input[0].length; itr++)
-                input[ctr][itr] = (int)Math.sqrt(input[ctr][itr]);
+                if (input[ctr][itr] < 127)
+                    input[ctr][itr] = input[ctr][itr] / 2;
+                //input[ctr][itr] = (int)Math.sqrt(input[ctr][itr]);
     }
 
     //gamma the matrix and get the double res

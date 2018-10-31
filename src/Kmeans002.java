@@ -173,9 +173,9 @@ public class Kmeans002 {
         int Matrix_col;
         int ClusterNum;
         int origin_col = 0;
-        String fileName = "D:\\240808fbbf4354cefc7b8f2f373dc3d0.jpg";
+        String fileName = "F:\\pic\\Ls\\a.jpg";
         Matrix_col=2;
-        ClusterNum=3;
+        ClusterNum=5;
         double[][]  Matrix = getData1D(fileName);
         origin_col = decideCol(fileName);
         Matrix_row = Matrix.length;
@@ -188,7 +188,7 @@ public class Kmeans002 {
         //printArray(List);
         fit(List, Matrix, ClusterNum);
         System.out.println("writing!");
-        Writer.writeImage(OneD2TwoD(Matrix, origin_col), "D:\\test123.jpg");
+        Writer.writeImage(OneD2TwoD(Matrix, origin_col), "F:\\pic\\Ls\\L2k.bmp");
         System.runFinalization();
     }
 }

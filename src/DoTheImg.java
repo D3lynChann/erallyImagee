@@ -276,4 +276,62 @@ public class DoTheImg {
                 res[ctr][itr] = Integer.valueOf(place.get(co++).toString());
         Writer.pureWriterP(res, file3);
     }
+
+    //print the matrix
+    public static void print(int[][] matrix) {
+        for (int ctr = 0; ctr < matrix.length; ctr++) {
+            for (int itr = 0; itr < matrix[0].length; itr++)
+                System.out.print(matrix[ctr][itr] + " ");
+            System.out.println(" ");
+        }
+        return ;
+    }
+
+    //combine two image
+    public static void combineTwoImage(String file1, String file2, String file3) throws Exception {
+        int[][] origin = GetterAndReader.getData(file1);
+        int[][] place = GetterAndReader.getData(file2);
+        int[][] res = new int[origin.length][origin[0].length];
+        for (int ctr = 0; ctr < origin.length; ctr++) {
+            for (int itr = 0; itr < origin[0].length; itr++) {
+                if (origin[ctr][itr] == 255 && place[ctr][itr] == 255)
+                    res[ctr][itr] = 255;
+                else res[ctr][itr] = 0;
+            }
+        }
+
+        for (int ctr = 0; ctr < res.length; ctr++) {
+            for (int itr = 0; itr < res[0].length; itr++) {
+                if (res[ctr][itr] == 0 && place[ctr][itr] == 255)
+                    res[ctr][itr] = 0;
+                else res[ctr][itr] = 255;
+            }
+        }
+        Writer.pureWriter(res, file3);
+    }
+
+    //get the rest pp
+    public static void getTheRestPp(String file1, String file2, String file3, String file4) throws Exception {
+        int[][] origin = GetterAndReader.getData(file1);
+        int[][] place1 = GetterAndReader.getData(file2);
+        int[][] place2 = GetterAndReader.getData(file1);
+        int[][] res = new int[origin.length][origin[0].length];
+        for (int ctr = 0; ctr < origin.length; ctr++) {
+            for (int itr = 0; itr < origin[0].length; itr++) {
+                if (origin[ctr][itr] == 255 && place1[ctr][itr] == 255 && place2[ctr][itr] == 255)
+                    res[ctr][itr] = 255;
+                else res[ctr][itr] = 0;
+            }
+        }
+        /*
+        for (int ctr = 0; ctr < res.length; ctr++) {
+            for (int itr = 0; itr < res[0].length; itr++) {
+                if (res[ctr][itr] == 0 && place1[ctr][itr] == 255 || res[ctr][itr] == 0 && place2[ctr][itr] == 255)
+                    res[ctr][itr] = 0;
+                else res[ctr][itr] = 255;
+            }
+        }
+        */
+        Writer.pureWriter(res, file4);
+    }
 }
