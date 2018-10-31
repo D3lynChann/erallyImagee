@@ -118,7 +118,12 @@ public class ImgHandler {
         //String[] res = {"F:\\pic\\pjs\\l1.jpg", "F:\\pic\\pjs\\l2.jpg", "F:\\pic\\pjs\\l3.jpg", "F:\\pic\\pjs\\res.bmp",};
         //pj_s_thought(res);
         //System.out.println(new Color(255,255,255).getRGB());
-        pjs4("F:\\pic\\pjs\\l2.jpg", "F:\\pic\\pjs\\l1s.jpg", "F:\\pic\\pjs\\res2s.bmp");
+        //DoTheImg.binaryTheImage("F:\\pic\\a.jpg", "F:\\pic\\ls\\b.bmp");
+        int[][] res = GetterAndReader.getDataP("F:\\pic\\Ls\\L2.jpg");
+        DoTheImg.NormalBinaryImage(res,185);
+        Writer.pureWriterP(res, "F:\\pic\\Ls\\L2r.jpg");
+        //DoTheImg.getColorImage("F:\\pic\\ls\\L1.jpg", "F:\\pic\\ls\\L2.jpg", "F:\\pic\\ls\\L1temp.bmp");
+        //pjs3("F:\\pic\\pjs\\l2.jpg", "F:\\pic\\pjs\\l1.jpg", "F:\\pic\\pjs\\res2.bmp");
         //pjs3("F:\\pic\\four.jpg", "F:\\pic\\pjs\\res1.jpg", "F:\\pic\\pjs\\res2.jpg");
         //writeImage(getBBBData("D:\\ff\\2.jpg"),"D:\\ff\\resOf2.jpg");
         //writeImage(getBBBData("D:\\ff\\3.jpg"),"D:\\ff\\resOf3.jpg");

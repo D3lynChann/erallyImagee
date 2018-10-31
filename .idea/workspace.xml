@@ -4,19 +4,12 @@
     <list default="true" id="c40f1fe9-8117-4503-9ec8-0009d58f1bba" name="默认的" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Imagee/DoTheImg.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Imagee/DoTheImg.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Imagee/GetterAndReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Imagee/GetterAndReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Imagee/HybridSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Imagee/HybridSystem.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Imagee/ImgHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Imagee/ImgHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Imagee/Transformer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Imagee/Transformer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Imagee/Writer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Imagee/Writer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Imagee/twoDCross.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Imagee/twoDCross.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DoTheImg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoTheImg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetterAndReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetterAndReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HybridSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HybridSystem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ImgHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ImgHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Transformer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transformer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Writer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Writer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/twoDCross.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/twoDCross.java" afterDir="false" />
     </list>
     <ignored path="Imagee.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,27 +28,29 @@
     <session id="-2070306646">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.151" value="1" />
+          <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.52" value="1" />
           <entry key="project.open.time.53" value="1" />
           <entry key="project.open.time.58" value="1" />
-          <entry key="project.open.time.60" value="1" />
+          <entry key="project.open.time.60" value="2" />
           <entry key="project.open.time.61" value="1" />
           <entry key="project.open.time.74" value="1" />
           <entry key="project.open.time.98" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="5109" />
+          <entry key="java" value="6277" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5109" />
+          <entry key="JAVA" value="6277" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -78,8 +73,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ImgHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="120" column="82" selection-start-line="120" selection-start-column="82" selection-end-line="120" selection-end-column="82" />
+            <state relative-caret-position="167">
+              <caret line="121" column="70" selection-start-line="121" selection-start-column="70" selection-end-line="121" selection-end-column="70" />
               <folding>
                 <element signature="docComment;class#ImgHandler#0" />
               </folding>
@@ -90,8 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GetterAndReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+            <state relative-caret-position="420">
+              <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,7 +97,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/twoDCross.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1369">
+            <state relative-caret-position="1170">
               <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
             </state>
           </provider>
@@ -120,8 +115,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DoTheImg.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="220" column="61" selection-start-line="220" selection-start-column="61" selection-end-line="220" selection-end-column="61" />
+            <state relative-caret-position="161">
+              <caret line="204" column="23" selection-start-line="204" selection-start-column="23" selection-end-line="204" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -132,7 +127,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Houghh.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
+            <state relative-caret-position="811">
               <caret line="319" selection-start-line="319" selection-end-line="319" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -161,8 +156,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Transformer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="131" column="31" selection-start-line="131" selection-start-column="31" selection-end-line="131" selection-end-column="31" />
+            <state relative-caret-position="290">
+              <caret line="138" column="26" selection-start-line="138" selection-start-column="26" selection-end-line="138" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -173,8 +168,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/HybridSystem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-469">
-              <caret line="375" column="28" selection-start-line="375" selection-start-column="28" selection-end-line="375" selection-end-column="28" />
+            <state relative-caret-position="424">
+              <caret line="251" column="22" selection-start-line="251" selection-start-column="22" selection-end-line="251" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#GsTrans#1;class#HybridSystem#0" />
@@ -186,8 +181,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Writer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+            <state relative-caret-position="660">
+              <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -237,12 +232,12 @@
         <option value="$PROJECT_DIR$/src/Houghh.java" />
         <option value="$PROJECT_DIR$/src/Imagee.java" />
         <option value="$PROJECT_DIR$/src/Kmeans002.java" />
-        <option value="$PROJECT_DIR$/src/Writer.java" />
         <option value="$PROJECT_DIR$/src/twoDCross.java" />
-        <option value="$PROJECT_DIR$/src/DoTheImg.java" />
         <option value="$PROJECT_DIR$/src/GetterAndReader.java" />
-        <option value="$PROJECT_DIR$/src/Transformer.java" />
         <option value="$PROJECT_DIR$/src/HybridSystem.java" />
+        <option value="$PROJECT_DIR$/src/Transformer.java" />
+        <option value="$PROJECT_DIR$/src/Writer.java" />
+        <option value="$PROJECT_DIR$/src/DoTheImg.java" />
         <option value="$PROJECT_DIR$/src/ImgHandler.java" />
       </list>
     </option>
@@ -717,19 +712,21 @@
       <workItem from="1540386060172" duration="589000" />
       <workItem from="1540438523531" duration="5510000" />
       <workItem from="1540528206347" duration="4308000" />
-      <workItem from="1540866978234" duration="7658000" />
+      <workItem from="1540866978234" duration="9415000" />
+      <workItem from="1540886666397" duration="1178000" />
+      <workItem from="1540912553569" duration="2381000" />
+      <workItem from="1540951557349" duration="3596000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="362830000" />
+    <option name="totallyTimeSpent" value="371742000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.1401919" />
-      <window_info id="Structure" order="1" visible="true" weight="0.21002132" />
+      <window_info id="Structure" order="1" visible="true" weight="0.21641791" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Image Layers" order="4" />
@@ -737,7 +734,7 @@
       <window_info id="Palette&#9;" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32974428" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42019543" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.42019543" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3995657" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -949,6 +946,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/twoDCross.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Kmeans002.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5460">
@@ -956,9 +960,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Writer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Houghh.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
+        <state relative-caret-position="811">
           <caret line="319" selection-start-line="319" selection-end-line="319" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -983,37 +997,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/twoDCross.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1369">
-          <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DoTheImg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="220" column="61" selection-start-line="220" selection-start-column="61" selection-end-line="220" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Writer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GetterAndReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+        <state relative-caret-position="420">
+          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1022,8 +1009,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Transformer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="131" column="31" selection-start-line="131" selection-start-column="31" selection-end-line="131" selection-end-column="31" />
+        <state relative-caret-position="290">
+          <caret line="138" column="26" selection-start-line="138" selection-start-column="26" selection-end-line="138" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DoTheImg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="204" column="23" selection-start-line="204" selection-start-column="23" selection-end-line="204" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1032,8 +1029,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HybridSystem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-469">
-          <caret line="375" column="28" selection-start-line="375" selection-start-column="28" selection-end-line="375" selection-end-column="28" />
+        <state relative-caret-position="424">
+          <caret line="251" column="22" selection-start-line="251" selection-start-column="22" selection-end-line="251" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#GsTrans#1;class#HybridSystem#0" />
@@ -1043,8 +1040,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ImgHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="120" column="82" selection-start-line="120" selection-start-column="82" selection-end-line="120" selection-end-column="82" />
+        <state relative-caret-position="167">
+          <caret line="121" column="70" selection-start-line="121" selection-start-column="70" selection-end-line="121" selection-end-column="70" />
           <folding>
             <element signature="docComment;class#ImgHandler#0" />
           </folding>

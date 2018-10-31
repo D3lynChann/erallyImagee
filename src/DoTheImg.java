@@ -247,4 +247,33 @@ public class DoTheImg {
                 if (input[ctr][itr] > 0 && input[ctr][itr] < 255) temp++;
         System.out.println(temp);
     }
+
+    //binary the image in a special way
+    public static void binaryTheImage(String file1, String file2) throws Exception {
+        int[][] temp = GetterAndReader.getData(file1);
+        for (int ctr = 0; ctr < temp.length; ctr++) {
+            for (int itr = 0; itr < temp[0].length; itr++) {
+                //System.out.print(temp[ctr][itr] + " ");
+                if (temp[ctr][itr] < 220) temp[ctr][itr] = 0;
+            }
+        }
+        Writer.pureWriter(temp, file2);
+    }
+
+    //square the image, file1 is the two-value picture, file2 is colorful picture, file3 is res
+    public static void getColorImage(String file1, String file2, String file3) throws Exception {
+        int[][] temp = GetterAndReader.getData(file1);
+        int[][] color = GetterAndReader.getData(file2);
+        ArrayList place = new ArrayList();
+        for (int ctr = 0; ctr < temp.length; ctr++)
+            for (int itr = 0; itr < temp[0].length; itr++)
+                if(temp[ctr][itr] != 255)
+                    place.add(color[ctr][itr]);
+        int[][] res = new int[(int)(Math.sqrt(place.size()))][(int)(Math.sqrt(place.size()))];
+        int co = 0;
+        for (int ctr = 0; ctr < (int)(Math.sqrt(place.size())); ctr++)
+            for (int itr = 0; itr < (int)(Math.sqrt(place.size())); itr++)
+                res[ctr][itr] = Integer.valueOf(place.get(co++).toString());
+        Writer.pureWriterP(res, file3);
+    }
 }

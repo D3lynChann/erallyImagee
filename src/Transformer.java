@@ -113,11 +113,11 @@ public class Transformer {
         for (int j = 0; j < width; j++) {
             for (int i = 0; i < height; i++) {
                 int rgb = image.getRGB(j, i);
-                result[j][i] = (int)((rgb * -1 - 1) / 16777215.0 * 255);
-                if (result[j][i] != 255) System.out.print(result[j][i] + " ");
+                result[j][i] = rgb;//(int)((rgb * -1 - 1) / 16777215.0 * 255);
+                //if (result[j][i] != 255) System.out.print(result[j][i] + " ");
             }
         }
-        System.out.println(" ");
+        //System.out.println(" ");
         return result;
     }
 

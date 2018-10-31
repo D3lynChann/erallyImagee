@@ -19,6 +19,16 @@ public class Writer {
         ImageIO.write(buff, "bmp", ImageFile);
     }
 
+    //pure writer
+    public static void pureWriterP(int[][] matrix, String fileName) throws Exception {
+        //matrix = toThree(matrix);
+        File ImageFile = new File(fileName);
+        //edge detection
+        //GsTrans(matrix);
+        BufferedImage buff;
+        buff = Transformer.IntArrayToGreyImage(matrix);
+        ImageIO.write(buff, "bmp", ImageFile);
+    }
 
     //a good write image function, the main function
     public static void writeImage(int[][] matrix, String fileName) throws Exception {
