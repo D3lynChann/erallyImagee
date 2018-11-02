@@ -334,4 +334,24 @@ public class DoTheImg {
         */
         Writer.pureWriter(res, file4);
     }
+
+    //reverse the image
+    public static void reverseBwImage(String file1, String file2) throws Exception {
+        int[][] origin = GetterAndReader.getData(file1);
+        for (int ctr = 0; ctr < origin.length; ctr++)
+            for (int itr = 0; itr < origin[0].length; itr++)
+                origin[ctr][itr] = origin[ctr][itr] == 255 ? 0 : 255;
+        Writer.pureWriter(origin, file2);
+    }
+
+    //get the shadow out
+    public static void removeShadow(String file1, String file2, String file3) throws Exception {
+        int[][] origin = GetterAndReader.getDataP(file1);
+        int[][] place = GetterAndReader.getData(file2);
+        int[][] res = new int[origin.length][origin[0].length];
+        for (int ctr = 0; ctr < res.length; ctr++)
+            for (int itr = 0; itr < res[0].length; itr++)
+                res[ctr][itr] = (place[ctr][itr] == 0) ? origin[ctr][itr] : 255;
+        Writer.pureWriterP(res, file3);
+    }
 }

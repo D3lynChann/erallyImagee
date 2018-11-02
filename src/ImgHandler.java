@@ -124,8 +124,10 @@ public class ImgHandler {
         //Houghh.GammaSch(res);
         //DoTheImg.print(res);
         //Writer.pureWriterP(res, "F:\\pic\\Ls\\L2r.bmp");
-        DoTheImg.combineTwoImage("F:\\pic\\ls\\gzz123.jpg", "F:\\pic\\ls\\gz2.jpg", "F:\\pic\\ls\\gzz1234.bmp");
-        //DoTheImg.getColorImage("F:\\pic\\ls\\gz3.jpg", "F:\\pic\\ls\\gz1.jpg", "F:\\pic\\ls\\gzz123.jpg");
+        //DoTheImg.combineTwoImage("F:\\pic\\ls\\gzz123.jpg", "F:\\pic\\ls\\gz2.jpg", "F:\\pic\\ls\\gzz1234.bmp");
+        //DoTheImg.reverseBwImage("F:\\pic\\ls\\gz3.jpg", "F:\\pic\\ls\\gz3rev.jpg");
+        //DoTheImg.removeShadow("F:\\pic\\ls\\a.jpg", "F:\\pic\\ls\\L1.jpg", "F:\\pic\\ls\\a_without_shadow.bmp");
+        DoTheImg.getColorImage("F:\\pic\\ls\\L1.jpg", "F:\\pic\\ls\\ak.jpg", "F:\\pic\\ls\\kmeansTemp.bmp");
         //DoTheImg.getTheRestPp("F:\\pic\\ls\\L1.jpg", "F:\\pic\\ls\\gz1.jpg", "F:\\pic\\ls\\gz2.jpg", "F:\\pic\\ls\\gz3.jpg");
         //pjs3("F:\\pic\\pjs\\l2.jpg", "F:\\pic\\pjs\\l1.jpg", "F:\\pic\\pjs\\res2.bmp");
         //pjs3("F:\\pic\\four.jpg", "F:\\pic\\pjs\\res1.jpg", "F:\\pic\\pjs\\res2.jpg");
