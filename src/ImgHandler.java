@@ -125,7 +125,8 @@ public class ImgHandler {
         //DoTheImg.print(res);
         //Writer.pureWriterP(res, "F:\\pic\\Ls\\L2r.bmp");
         //DoTheImg.combineTwoImage("F:\\pic\\ls\\gzz123.jpg", "F:\\pic\\ls\\gz2.jpg", "F:\\pic\\ls\\gzz1234.bmp");
-        DoTheImg.reverseBwImage("F:\\pic\\ls\\gz3revssaasddaasds.jpg", "F:\\pic\\ls\\gz3revdsfsdasdddasd.bmp");
+        //DoTheImg.reverseBwImage("F:\\pic\\ls\\gz3revssaasddaasds.jpg", "F:\\pic\\ls\\gz3revdsfsdasdddasd.bmp");
+        DoTheImg.colorThePpYGR("F:\\pic\\ls\\yellow.jpg", "F:\\pic\\ls\\green.jpg", "F:\\pic\\ls\\red.jpg", "F:\\pic\\ls\\three.bmp");
         //DoTheImg.removeShadow("F:\\pic\\ls\\a_o.jpg", "F:\\pic\\ls\\L1.jpg", "F:\\pic\\ls\\a_without_shadowk.bmp");
         //DoTheImg.getColorImage("F:\\pic\\ls\\L1.jpg", "F:\\pic\\ls\\akkk.jpg", "F:\\pic\\ls\\kmeansTergemp.bmp");
         //DoTheImg.getTheRestPp("F:\\pic\\ls\\L1.jpg", "F:\\pic\\ls\\gz1.jpg", "F:\\pic\\ls\\gz2.jpg", "F:\\pic\\ls\\gz3.jpg");

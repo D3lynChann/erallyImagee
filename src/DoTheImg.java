@@ -354,4 +354,20 @@ public class DoTheImg {
                 res[ctr][itr] = (place[ctr][itr] == 0) ? origin[ctr][itr] : 255;
         Writer.pureWriterP(res, file3);
     }
+
+    //color the pp
+    public static void colorThePpYGR(String file1, String file2, String file3, String file4) throws Exception {
+        int[][] yellow = GetterAndReader.getDataPro(file1);
+        int[][] green = GetterAndReader.getDataPro(file2);
+        int[][] red = GetterAndReader.getDataPro(file3);
+        for (int ctr = 0; ctr < yellow.length; ctr++) {
+            for (int itr = 0; itr < yellow[0].length; itr++) {
+                if (yellow[ctr][itr] != 0) yellow[ctr][itr] = new Color(255,255,0).getRGB();
+                if (green[ctr][itr] != 0) yellow[ctr][itr] = new Color(75,46,100).getRGB();
+                if (red[ctr][itr] != 0) yellow[ctr][itr] = new Color(255,0,0).getRGB();
+                if (yellow[ctr][itr] == 0x000000) yellow[ctr][itr] = 0xffffff;
+            }
+        }
+        Writer.pureWriterP(yellow, file4);
+    }
 }
