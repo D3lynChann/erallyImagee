@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c40f1fe9-8117-4503-9ec8-0009d58f1bba" name="默认的" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Pall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Imagee/DataPacking.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Imagee/DataPacking.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Imagee/HE/Paillier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Imagee/HE/Paillier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Imagee/HE/PaillierDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Imagee/HE/PaillierDemo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DataPacking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataPacking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HE/Paillier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HE/Paillier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HE/PaillierDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HE/PaillierDemo.java" afterDir="false" />
     </list>
     <ignored path="Imagee.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,19 +29,23 @@
     <session id="-2070306646">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="23" />
+          <entry key="project.closed" value="29" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.151" value="1" />
           <entry key="project.open.time.23" value="1" />
-          <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.24" value="3" />
           <entry key="project.open.time.25" value="1" />
-          <entry key="project.open.time.28" value="2" />
+          <entry key="project.open.time.28" value="4" />
           <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.30" value="1" />
+          <entry key="project.open.time.31" value="1" />
+          <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.36" value="2" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.46" value="1" />
+          <entry key="project.open.time.46" value="2" />
           <entry key="project.open.time.51" value="1" />
           <entry key="project.open.time.52" value="1" />
           <entry key="project.open.time.53" value="1" />
@@ -44,27 +55,27 @@
           <entry key="project.open.time.74" value="1" />
           <entry key="project.open.time.81" value="1" />
           <entry key="project.open.time.98" value="1" />
-          <entry key="project.opened" value="25" />
+          <entry key="project.opened" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="18560" />
+          <entry key="java" value="28517" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="18560" />
+          <entry key="JAVA" value="28517" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="17" />
+          <entry key="java" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="17" />
+          <entry key="JAVA" value="24" />
         </counts>
       </usages-collector>
     </session>
@@ -77,7 +88,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Kmeans002.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
+            <state relative-caret-position="5220">
               <caret line="177" column="20" selection-start-line="177" selection-start-column="20" selection-end-line="177" selection-end-column="20" />
             </state>
           </provider>
@@ -88,9 +99,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="10680">
               <caret line="367" column="78" selection-start-line="367" selection-start-column="78" selection-end-line="367" selection-end-column="78" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -98,8 +106,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/HE/PaillierDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+            <state relative-caret-position="450">
+              <caret line="15" column="81" selection-start-line="15" selection-start-column="81" selection-end-line="15" selection-end-column="81" />
             </state>
           </provider>
         </entry>
@@ -107,8 +115,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DataPacking.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="317" column="54" selection-start-line="317" selection-start-column="54" selection-end-line="317" selection-end-column="54" />
+            <state relative-caret-position="50">
+              <caret line="1084" column="66" selection-start-line="1084" selection-start-column="66" selection-end-line="1084" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -117,12 +125,20 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/HE/Paillier.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1710">
+              <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Houghh.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="709">
+            <state relative-caret-position="1200">
               <caret line="204" column="38" selection-start-line="204" selection-start-column="38" selection-end-line="204" selection-end-column="38" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="method#getArrayListOfHist#0;class#Houghh#0" />
                 <element signature="method#hough#0;class#Houghh#0" />
                 <element signature="method#hough#1;class#Houghh#0" />
@@ -149,9 +165,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="3510">
               <caret line="124" column="51" selection-start-line="124" selection-start-column="51" selection-end-line="124" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -159,10 +172,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/HybridSystem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="65" column="25" lean-forward="true" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
+            <state relative-caret-position="1500">
+              <caret line="65" column="25" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="method#GsTrans#1;class#HybridSystem#0" />
               </folding>
             </state>
@@ -174,9 +186,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
               <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -193,7 +202,11 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>加上</find>
+      <find>piece</find>
     </findStrings>
+    <replaceStrings>
+      <replace>packed</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -216,9 +229,7 @@
         <option value="$PROJECT_DIR$/src/Kmeans/Test.java" />
         <option value="$PROJECT_DIR$/src/Kmeans02/Kmeans.java" />
         <option value="$PROJECT_DIR$/src/HE/Double.java" />
-        <option value="$PROJECT_DIR$/src/HE/PaillierDemo.java" />
         <option value="$PROJECT_DIR$/src/HE/DDouble.java" />
-        <option value="$PROJECT_DIR$/src/HE/Paillier.java" />
         <option value="$PROJECT_DIR$/src/Kmeans003.java" />
         <option value="$PROJECT_DIR$/src/Imagee.java" />
         <option value="$PROJECT_DIR$/src/twoDCross.java" />
@@ -230,6 +241,9 @@
         <option value="$PROJECT_DIR$/src/ImgHandler.java" />
         <option value="$PROJECT_DIR$/src/Transformer.java" />
         <option value="$PROJECT_DIR$/src/DoTheImg.java" />
+        <option value="$PROJECT_DIR$/src/HE/PaillierDemo.java" />
+        <option value="$PROJECT_DIR$/src/Pall.java" />
+        <option value="$PROJECT_DIR$/src/HE/Paillier.java" />
         <option value="$PROJECT_DIR$/src/DataPacking.java" />
       </list>
     </option>
@@ -240,18 +254,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="Bundled (Maven 3)" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="702" />
-    <option name="y" value="-14" />
-    <option name="width" value="1092" />
-    <option name="height" value="724" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1456" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -280,26 +287,16 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Imagee" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Imagee" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="manhattan&#9;PSI&#9;JAVA://Kmeans002#manhattanDistince&#10;KM&#9;PSI&#9;JAVA://Kmeans02.Kmeans" />
+    <property name="SearchEverywhereHistoryKey" value="piece&#9;PSI&#9;JAVA://DataPacking#pieceH&#10;manhattan&#9;PSI&#9;JAVA://Kmeans002#manhattanDistince&#10;KM&#9;PSI&#9;JAVA://Kmeans02.Kmeans" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543681423874" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544790672056" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files (x86)\nodejs\node.exe" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -584,12 +581,14 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="VM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="VM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <properties />
       <listeners />
@@ -616,13 +615,13 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.Unnamed" />
       <item itemvalue="Application.2d" />
+      <item itemvalue="Application.DataPacking" />
       <item itemvalue="Application.GCs" />
-      <item itemvalue="Application.he" />
       <item itemvalue="Application.Kmeans001" />
       <item itemvalue="Application.Kmeans002" />
-      <item itemvalue="Application.DataPacking" />
+      <item itemvalue="Application.Unnamed" />
+      <item itemvalue="Application.he" />
       <item itemvalue="Application.ImgHandler" />
     </list>
     <recent_temporary>
@@ -707,89 +706,55 @@
       <workItem from="1543569421384" duration="1194000" />
       <workItem from="1543635312763" duration="15851000" />
       <workItem from="1543728835486" duration="5684000" />
+      <workItem from="1543830910312" duration="8590000" />
+      <workItem from="1543902203903" duration="11911000" />
+      <workItem from="1544010106792" duration="12931000" />
+      <workItem from="1544031519591" duration="1992000" />
+      <workItem from="1544084559570" duration="7852000" />
+      <workItem from="1544221497792" duration="3166000" />
+      <workItem from="1544227232892" duration="11544000" />
+      <workItem from="1544496444131" duration="4353000" />
+      <workItem from="1544612343612" duration="712000" />
+      <workItem from="1544690170853" duration="12370000" />
+      <workItem from="1544790435185" duration="836000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="443176000" />
+    <option name="totallyTimeSpent" value="528583000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15138593" />
-      <window_info id="Structure" order="1" weight="0.14072494" />
+      <window_info id="Image Layers" />
+      <window_info id="Capture Tool" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
+      <window_info active="true" id="Structure" order="1" visible="true" weight="0.21375267" />
       <window_info id="UI Designer" order="2" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="Image Layers" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Palette&#9;" order="6" />
+      <window_info id="Palette&#9;" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32974428" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.7687296" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3995657" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.69448185" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50214136" side_tool="true" weight="0.2669633" />
-      <window_info anchor="bottom" id="版本控制" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="调试" order="10" />
-      <window_info anchor="bottom" id="消息" order="11" weight="0.32852387" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32802248" />
-      <window_info anchor="bottom" id="运行" order="13" sideWeight="0.49785867" weight="0.27586207" />
-      <window_info anchor="bottom" id="找到" order="14" weight="0.32963374" />
-      <window_info anchor="bottom" id="Messages" order="15" weight="0.32356134" />
-      <window_info anchor="bottom" id="Database Changes" order="16" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32974428" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32974428" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Theme Preview" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Designer" order="4" />
-      <window_info anchor="right" id="PlantUML" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Code Iris" order="7" />
-      <window_info anchor="right" id="Capture Analysis" order="8" />
-      <window_info anchor="right" id="控制板" order="9" />
-      <window_info anchor="right" id="Theme Preview" order="10" />
-      <window_info anchor="right" id="Palette" order="11" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18415418" />
-      <window_info id="Structure" order="1" weight="0.17665952" />
-      <window_info id="UI Designer" order="2" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="Image Layers" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Palette&#9;" order="6" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32974428" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32356256" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50214136" side_tool="true" weight="0.2669633" />
-      <window_info anchor="bottom" id="版本控制" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="调试" order="10" />
-      <window_info anchor="bottom" id="消息" order="11" weight="0.32852387" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32802248" />
-      <window_info anchor="bottom" id="运行" order="13" sideWeight="0.49785867" weight="0.27586207" />
-      <window_info anchor="bottom" id="找到" order="14" weight="0.32963374" />
-      <window_info anchor="bottom" id="Messages" order="15" weight="0.32468995" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="right" id="Designer" order="4" />
-      <window_info anchor="right" id="PlantUML" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Code Iris" order="7" />
-      <window_info anchor="right" id="Capture Analysis" order="8" />
-      <window_info anchor="right" id="控制板" order="9" />
-      <window_info anchor="right" id="Theme Preview" order="10" />
-      <window_info anchor="right" id="Palette" order="11" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -852,9 +817,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Imagee.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/yao/gate/Kuang.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -863,7 +825,6 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Downloads/tianpianjiance/tianpianjiance/test/src/houghline/HoughTransform.java" />
-    <entry file="file://$PROJECT_DIR$/src/it/andreamaglie/cannyedge/Canny.java" />
     <entry file="file://$PROJECT_DIR$/src/circuit/h.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -900,67 +861,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HE/Paillier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="739">
-          <caret line="80" column="58" selection-start-line="80" selection-start-column="58" selection-end-line="80" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/HE/DDouble.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
+        <state>
           <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kmeans003.java" />
-    <entry file="file://$PROJECT_DIR$/src/SimpleSvmWithoutKernel.java" />
     <entry file="file://$PROJECT_DIR$/src/Imagee.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2760">
+        <state>
           <caret line="97" column="29" selection-start-line="97" selection-start-column="29" selection-end-line="97" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_171/src.zip!/javax/imageio/ImageIO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="1300" selection-start-line="1300" selection-end-line="1300" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ImgHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3300">
+        <state>
           <caret line="128" column="22" selection-start-line="128" selection-start-column="22" selection-end-line="128" selection-end-column="22" />
-          <folding>
-            <element signature="docComment;class#ImgHandler#0" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/twoDCross.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4860">
+        <state>
           <caret line="172" column="21" selection-start-line="172" selection-start-column="21" selection-end-line="172" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GetterAndReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
+        <state>
           <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_171/src.zip!/java/math/BigInteger.java">
+    <entry file="file://$PROJECT_DIR$/src/Kmeans002.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="2088" selection-start-line="2088" selection-end-line="2088" />
+        <state relative-caret-position="5220">
+          <caret line="177" column="20" selection-start-line="177" selection-start-column="20" selection-end-line="177" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -968,70 +907,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10680">
           <caret line="367" column="78" selection-start-line="367" selection-start-column="78" selection-end-line="367" selection-end-column="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HE/PaillierDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+        <state relative-caret-position="450">
+          <caret line="15" column="81" selection-start-line="15" selection-start-column="81" selection-end-line="15" selection-end-column="81" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Transformer.java">
+    <entry file="file://$PROJECT_DIR$/src/HE/Paillier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3510">
-          <caret line="124" column="51" selection-start-line="124" selection-start-column="51" selection-end-line="124" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Writer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kmeans002.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="177" column="20" selection-start-line="177" selection-start-column="20" selection-end-line="177" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_171/src.zip!/java/io/PrintStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="811">
-          <caret line="969" selection-start-line="969" selection-end-line="969" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HybridSystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="65" column="25" lean-forward="true" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#GsTrans#1;class#HybridSystem#0" />
-          </folding>
+        <state relative-caret-position="1710">
+          <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Houghh.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="709">
+        <state relative-caret-position="1200">
           <caret line="204" column="38" selection-start-line="204" selection-start-column="38" selection-end-line="204" selection-end-column="38" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#getArrayListOfHist#0;class#Houghh#0" />
             <element signature="method#hough#0;class#Houghh#0" />
             <element signature="method#hough#1;class#Houghh#0" />
@@ -1052,10 +949,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Transformer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3510">
+          <caret line="124" column="51" selection-start-line="124" selection-start-column="51" selection-end-line="124" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HybridSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1500">
+          <caret line="65" column="25" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
+          <folding>
+            <element signature="method#GsTrans#1;class#HybridSystem#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Writer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/DataPacking.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="317" column="54" selection-start-line="317" selection-start-column="54" selection-end-line="317" selection-end-column="54" />
+        <state relative-caret-position="50">
+          <caret line="1084" column="66" selection-start-line="1084" selection-start-column="66" selection-end-line="1084" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

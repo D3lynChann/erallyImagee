@@ -76,9 +76,24 @@ public class Paillier {
         return input_a.modPow(input_b, pp.getNsquare()).mod(pp.getNsquare());
     }
 
+    public static BigInteger pow(BigInteger input, int times, Paillier pp) throws Exception {
+        if (times == 0) return pp.encrypt(new BigInteger("1"));
+        return mulBig(pow(input, times - 1, pp), pp.decrypt(input), pp);
+
+    }
+
+    public static BigInteger modBig(BigInteger input, int target, Paillier pp) throws Exception {
+        return pp.encrypt(pp.decrypt(input).mod(new BigInteger(String.valueOf(target))));
+    }
+
+    public static BigInteger divBig(BigInteger input, int target, Paillier pp) throws Exception {
+        return pp.encrypt(pp.decrypt(input).divide(new BigInteger(String.valueOf(target))));
+    }
+
+
     public static Boolean isEq(BigInteger input_a, BigInteger input_b, Paillier pp) throws Exception {
         //return subBig(input_a, input_b, pp) == pp.encrypt(new BigInteger("0"));
-        return pp.decrypt(input_a) == pp.decrypt(input_b);
+        return pp.decrypt(input_a).equals(pp.decrypt(input_b));
     }
 
     public BigInteger getN() {
@@ -125,6 +140,7 @@ public class Paillier {
 
     public BigInteger encrypt(BigInteger m) throws Exception {
         // if m is not in Z_n
+        //System.out.println("oye");
         if (m.compareTo(BigInteger.ZERO) < 0 || m.compareTo(n) >= 0) {
             throw new Exception("Paillier.encrypt(BigInteger m): plaintext m is not in Z_n");
         }
@@ -154,7 +170,8 @@ public class Paillier {
     public BigInteger decrypt(BigInteger c) throws Exception {
         // if c is not in Z*_{n^2}
         if (c.compareTo(BigInteger.ZERO) < 0 || c.compareTo(nsquare) >= 0 || c.gcd(nsquare).intValue() != 1) {
-            throw new Exception("Paillier.decrypt(BigInteger c): ciphertext c is not in Z*_{n^2}");
+            System.out.println(c);
+            throw new Exception("Paillier.decrypt(BigInteger c): ciphertext c is not in Z*_{n^2}" + c);
         }
 
         // m = L(c^lambda mod n^2) * mu mod n, where L(u) = (u-1)/n

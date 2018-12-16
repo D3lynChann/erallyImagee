@@ -10,12 +10,11 @@ public class PaillierDemo {
         long startTime=System.currentTimeMillis();   //获取开始时间
         try {
             Paillier pp = new Paillier(64);
-            BigInteger a = pp.encrypt(new BigInteger("120"));
-            BigInteger b = pp.encrypt(new BigInteger("50"));
-            DDouble aa = new DDouble(2, a, pp);
-            DDouble bb = new DDouble(1, b, pp);
-            aa.Pmul(bb).show();
-            pp.generateKeys();
+            BigInteger a = pp.encrypt(new BigInteger("6"));
+
+            BigInteger b = pp.encrypt(new BigInteger("6"));
+            System.out.println(pp.decrypt(Paillier.mulBig(a, pp.decrypt(b), pp)));
+            //pp.generateKeys();
         } catch (Exception e) {
             e.printStackTrace();
         }
